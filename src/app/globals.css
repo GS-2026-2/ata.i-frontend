@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --atai-bg: #f6f2e8;
+  --atai-white: #ffffff;
+  --atai-navy: #163a56;
+  --atai-muted: #526677;
+  --atai-line: #e3dac9;
+  --atai-green: #236b4e;
+  --atai-green-hover: #1c573f;
+  --atai-pale: #e7f3eb;
+  --atai-blue: #255f85;
+  --atai-info: #e8f1f7;
+  --atai-red: #a53131;
+  --atai-error: #fcecec;
+}
+
+@theme inline {
+  --color-atai-bg: var(--atai-bg);
+  --color-atai-white: var(--atai-white);
+  --color-atai-navy: var(--atai-navy);
+  --color-atai-muted: var(--atai-muted);
+  --color-atai-line: var(--atai-line);
+  --color-atai-green: var(--atai-green);
+  --color-atai-green-hover: var(--atai-green-hover);
+  --color-atai-pale: var(--atai-pale);
+  --color-atai-blue: var(--atai-blue);
+  --color-atai-info: var(--atai-info);
+  --color-atai-red: var(--atai-red);
+  --color-atai-error: var(--atai-error);
+  --font-sans: var(--font-inter), "Inter", Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--atai-bg);
+  color: var(--atai-navy);
+  font-family: var(--font-inter), "Inter", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
